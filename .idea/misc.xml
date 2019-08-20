@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MarkdownNavigator.ProfileManager" plain-text-search-scope="Project Files" />
+  <component name="MarkdownProjectSettings" wasCopied="true">
+    <PreviewSettings splitEditorLayout="SPLIT" splitEditorPreview="PREVIEW" useGrayscaleRendering="false" zoomFactor="1.25" maxImageWidth="0" showGitHubPageIfSynced="false" allowBrowsingInPreview="false" synchronizePreviewPosition="true" highlightPreviewType="NONE" highlightFadeOut="5" highlightOnTyping="true" synchronizeSourcePosition="true" verticallyAlignSourceAndPreviewSyncPosition="true" showSearchHighlightsInPreview="false" showSelectionInPreview="true" openRemoteLinks="false" replaceUnicodeEmoji="false" lastLayoutSetsDefault="false">
+      <PanelProvider>
+        <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.panel" providerName="Default - Swing" />
+      </PanelProvider>
+    </PreviewSettings>
+    <ParserSettings gitHubSyntaxChange="false" emojiShortcuts="1" emojiImages="0">
+      <PegdownExtensions>
+        <option name="ABBREVIATIONS" value="false" />
+        <option name="ANCHORLINKS" value="true" />
+        <option name="ASIDE" value="false" />
+        <option name="ATXHEADERSPACE" value="true" />
+        <option name="AUTOLINKS" value="true" />
+        <option name="DEFINITIONS" value="false" />
+        <option name="DEFINITION_BREAK_DOUBLE_BLANK_LINE" value="false" />
+        <option name="FENCED_CODE_BLOCKS" value="true" />
+        <option name="FOOTNOTES" value="false" />
+        <option name="HARDWRAPS" value="false" />
+        <option name="HTML_DEEP_PARSER" value="false" />
+        <option name="INSERTED" value="false" />
+        <option name="QUOTES" value="false" />
+        <option name="RELAXEDHRULES" value="true" />
+        <option name="SMARTS" value="false" />
+        <option name="STRIKETHROUGH" value="true" />
+        <option name="SUBSCRIPT" value="false" />
+        <option name="SUPERSCRIPT" value="false" />
+        <option name="SUPPRESS_HTML_BLOCKS" value="false" />
+        <option name="SUPPRESS_INLINE_HTML" value="false" />
+        <option name="TABLES" value="true" />
+        <option name="TASKLISTITEMS" value="true" />
+        <option name="TOC" value="false" />
+        <option name="WIKILINKS" value="false" />
+      </PegdownExtensions>
+      <ParserOptions>
+        <option name="ADMONITION_EXT" value="false" />
+        <option name="ATTRIBUTES_EXT" value="false" />
+        <option name="COMMONMARK_LISTS" value="true" />
+        <option name="DUMMY" value="false" />
+        <option name="EMOJI_SHORTCUTS" value="true" />
+        <option name="ENUMERATED_REFERENCES_EXT" value="false" />
+        <option name="FLEXMARK_FRONT_MATTER" value="false" />
+        <option name="GFM_LOOSE_BLANK_LINE_AFTER_ITEM_PARA" value="false" />
+        <option name="GFM_TABLE_RENDERING" value="true" />
+        <option name="GITBOOK_URL_ENCODING" value="false" />
+        <option name="GITHUB_LISTS" value="false" />
+        <option name="GITHUB_WIKI_LINKS" value="false" />
+        <option name="GITLAB_EXT" value="false" />
+        <option name="GITLAB_MATH_EXT" value="false" />
+        <option name="GITLAB_MERMAID_EXT" value="false" />
+        <option name="HEADER_ID_NON_ASCII_TO_LOWERCASE" value="false" />
+        <option name="HEADER_ID_NO_DUPED_DASHES" value="false" />
+        <option name="JEKYLL_FRONT_MATTER" value="false" />
+        <option name="MACROS_EXT" value="false" />
+        <option name="NO_TEXT_ATTRIBUTES" value="false" />
+        <option name="PARSE_HTML_ANCHOR_ID" value="false" />
+        <option name="PLANTUML_FENCED_CODE" value="false" />
+        <option name="PUML_FENCED_CODE" value="false" />
+        <option name="SIM_TOC_BLANK_LINE_SPACER" value="true" />
+      </ParserOptions>
+    </ParserSettings>
+    <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" embedUrlContent="false" addPageHeader="true" embedImages="false" embedHttpImages="false" imageUriSerials="false" addDocTypeHtml="true" noParaTags="false" plantUmlConversion="0" mathConversion="-1">
+      <GeneratorProvider>
+        <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.generator" providerName="Default Swing HTML Generator" />
+      </GeneratorProvider>
+      <headerTop />
+      <headerBottom />
+      <bodyTop />
+      <bodyBottom />
+    </HtmlSettings>
+    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="true" isCssTextEnabled="false" isDynamicPageWidth="true">
+      <StylesheetProvider>
+        <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.css" providerName="Default Swing Stylesheet" />
+      </StylesheetProvider>
+      <ScriptProviders />
+      <cssText />
+      <cssUriHistory />
+    </CssSettings>
+    <AnnotatorSettings targetHasSpaces="true" linkCaseMismatch="true" wikiCaseMismatch="true" wikiLinkHasDashes="true" notUnderWikiHome="true" targetNotWikiPageExt="true" notUnderSourceWikiHome="true" targetNameHasAnchor="true" targetPathHasAnchor="true" wikiLinkHasSlash="true" wikiLinkHasSubdir="true" wikiLinkHasOnlyAnchor="true" linkTargetsWikiHasExt="true" linkTargetsWikiHasBadExt="true" notUnderSameRepo="true" targetNotUnderVcs="false" linkNeedsExt="true" linkHasBadExt="true" linkTargetNeedsExt="true" linkTargetHasBadExt="true" wikiLinkNotInWiki="true" imageTargetNotInRaw="true" repoRelativeAcrossVcsRoots="true" multipleWikiTargetsMatch="true" unresolvedLinkReference="true" linkIsIgnored="true" anchorIsIgnored="true" anchorIsUnresolved="true" anchorLineReferenceIsUnresolved="true" anchorLineReferenceFormat="true" anchorHasDuplicates="true" abbreviationDuplicates="true" abbreviationNotUsed="true" attributeIdDuplicateDefinition="true" attributeIdNotUsed="true" footnoteDuplicateDefinition="true" footnoteUnresolved="true" footnoteDuplicates="true" footnoteNotUsed="true" macroDuplicateDefinition="true" macroUnresolved="true" macroDuplicates="true" macroNotUsed="true" referenceDuplicateDefinition="true" referenceUnresolved="true" referenceDuplicates="true" referenceNotUsed="true" referenceUnresolvedNumericId="true" enumRefDuplicateDefinition="true" enumRefUnresolved="true" enumRefDuplicates="true" enumRefNotUsed="true" enumRefLinkUnresolved="true" enumRefLinkDuplicates="true" simTocUpdateNeeded="true" simTocTitleSpaceNeeded="true" />
+    <HtmlExportSettings updateOnSave="false" parentDir="" targetDir="$OutputPath$" cssDir="$OutputPath$/css" scriptDir="$OutputPath$/js" plainHtml="false" imageDir="$OutputPath$/img" copyLinkedImages="false" imageUniquifyType="0" targetPathType="2" targetExt="" useTargetExt="false" noCssNoScripts="false" useElementStyleAttribute="false" linkToExportedHtml="true" exportOnSettingsChange="true" regenerateOnProjectOpen="false" linkFormatType="HTTP_ABSOLUTE" />
+    <LinkMapSettings>
+      <textMaps />
+    </LinkMapSettings>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="mavenHome" value="/opt/lang-tools/maven" />
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+    <option name="vmOptions" value="-Dfile.encoding=UTF8 -Xms128m -Xmx512M -Duser.language=zh -Xss2M -XX:+CMSClassUnloadingEnabled" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6 (py36)" project-jdk-type="Python SDK" />
+  <component name="PylintConfigService">
+    <option name="customPylintPath" value="$USER_HOME$/software/anaconda3/envs/py36/bin/pylint" />
+    <option name="pylintrcPath" value="$USER_HOME$/.vim/extools/conf/pylint.conf" />
+  </component>
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="5a97b875-63db-405a-b6d2-652002217971" />
+      <option name="name" value="5a97b875-63db-405a-b6d2-652002217971" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../Scala-projects/sbt_build/simpleapp" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../Scala-projects/sbt_build/water" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../Scala-projects/spark/simpleapp" value="PREVIEW" />
+        <entry key="$USER_HOME$/0_Exercise/Scala-projects/sbt_build/myspark" value="PREVIEW" />
+        <entry key="$USER_HOME$/0_Exercise/Scala-projects/sbt_build/myspark (copy)" value="PREVIEW" />
+        <entry key="$USER_HOME$/Exercise/Scala-projects/sbt_build/SBTExampleProject" value="PREVIEW" />
+        <entry key="$USER_HOME$/Exercise/Scala-projects/sbt_build/mySpark" value="PREVIEW" />
+        <entry key="$USER_HOME$/Exercise/Scala-projects/sbt_build/wordcount" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ScalaProjectSettings">
+    <option name="intInjectionMapping">
+      <map>
+        <entry key="xml" value="XML" />
+      </map>
+    </option>
+    <option name="showImplisitConversions" value="true" />
+  </component>
+  <component name="ScalaSbtSettings">
+    <option name="customLauncherEnabled" value="true" />
+    <option name="customLauncherPath" value="/opt/lang-tools/scala/sbt/bin/sbt-launch.jar" />
+    <option name="customVMEnabled" value="true" />
+    <option name="customVMPath" value="$JAVA_HOME$" />
+    <option name="vmParameters" value="-Dsbt.global.base=/home/alanding/.sbt -Dsbt.boot.directory=/home/alanding/.sbt/boot/ -Dsbt.repository.config=/home/alanding/.sbt/repositories -Dsbt.ivy.home=/home/alanding/.ivy2 -Dsbt.log.format=true -Dsbt.override.build.repos=true -Dfile.encoding=UTF8 -Xms128m -Xmx512M -Duser.language=zh -Xss2M -XX:+CMSClassUnloadingEnabled" />
+  </component>
+  <component name="XMakeProjectSettings">
+    <option name="currentArchitecture" value="x86_64" />
+    <option name="workingDirectory" value="$PROJECT_DIR$" />
+  </component>
+</project>
