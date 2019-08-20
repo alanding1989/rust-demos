@@ -12,14 +12,8 @@ fn main() {
 //    basic_types();
 //    container();
 //    generic();
-//    closure();
+//    functional();
     concurrent();
-}
-
-
-#[allow(dead_code)]
-fn package_example() {
-    functional::entry()
 }
 
 
@@ -72,33 +66,15 @@ fn generic() {
 
 
 #[allow(dead_code)]
-fn closure() {
-    use functional::Cacher;
-    let mut calc = Cacher::new(
-        |num| {
-            println!("num is {}", num);
-            num
-        }
-    );
+fn functional() {
+    functional::entry();
 
-    println!("calc is  {}", calc.value("hello"));
+    functional::closure();
 }
 
 
 #[allow(dead_code)]
 fn concurrent() {
-    use std::thread;
-    use std::time::Duration;
-
-    let s = String::from("alan is the best !");
-
-    let main_fc = |s: &str| for i in 1..5 {
-        println!("hi, number {} from the main thread !", i);
-        println!("{}", s);
-        thread::sleep(Duration::from_millis(1));
-    };
-
-//    concurrent::thread_join_before_main(main_fc, &s);
-    concurrent::thread_join_before_main(main_fc, &s);
-    println!("s is {}", s);
+//    concurrent::thread_example();
+    concurrent::channel_example();
 }
