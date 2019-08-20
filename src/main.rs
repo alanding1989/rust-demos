@@ -1,32 +1,31 @@
-use crate::closure::Cacher;
-use crate::trait_interface::Circle;
-
 mod basic_syntax;
-mod highorder_func;
+mod functional;
 mod trait_interface;
 mod io_example;
 mod container;
 mod generics;
-mod closure;
-mod smartpointer;
+mod concurrent;
+
 
 fn main() {
 //    io_example();
 //    basic_types();
 //    container();
 //    generic();
-    closure();
+//    closure();
+    concurrent();
 }
 
 
 #[allow(dead_code)]
 fn package_example() {
-    highorder_func::entry();
+    functional::entry()
 }
 
 
 #[allow(dead_code)]
 fn trait_interf() {
+    use crate::trait_interface::Circle;
     // struct
     let cir = Circle::new(1.0, 2.0, 5.0);
     // the following initialization method only can used for tuple struct,
@@ -74,6 +73,7 @@ fn generic() {
 
 #[allow(dead_code)]
 fn closure() {
+    use functional::Cacher;
     let mut calc = Cacher::new(
         |num| {
             println!("num is {}", num);
@@ -82,4 +82,23 @@ fn closure() {
     );
 
     println!("calc is  {}", calc.value("hello"));
+}
+
+
+#[allow(dead_code)]
+fn concurrent() {
+    use std::thread;
+    use std::time::Duration;
+
+    let s = String::from("alan is the best !");
+
+    let main_fc = |s: &str| for i in 1..5 {
+        println!("hi, number {} from the main thread !", i);
+        println!("{}", s);
+        thread::sleep(Duration::from_millis(1));
+    };
+
+//    concurrent::thread_join_before_main(main_fc, &s);
+    concurrent::thread_join_before_main(main_fc, &s);
+    println!("s is {}", s);
 }
