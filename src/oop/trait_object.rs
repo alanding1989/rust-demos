@@ -18,6 +18,7 @@ impl<T: Draw> Screen<T> {
 }
 
 // Box<dyn Draw> can accept 'different' types which implemented Draw.
+// it`s like duck type.
 pub struct Screen1 {
     pub components: Vec<Box<dyn Draw>>,
 }
@@ -30,6 +31,7 @@ impl Screen1 {
     }
 }
 //</editor-fold>
+
 
 //<editor-fold desc="@ Components">
 pub struct Button {

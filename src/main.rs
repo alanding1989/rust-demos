@@ -95,5 +95,5 @@ fn oop() {
 
 #[allow(dead_code)]
 fn hybrid_programming(){
-    hybrid_programming::c_fun();
+    hybrid_programming::calling_c();
 }
