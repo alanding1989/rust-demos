@@ -11,6 +11,7 @@ pub fn thread_join_before_main<F>(main_func: F, s: &str)
         }
     }).join().unwrap();
 
+    println!();
     main_func(s)
 }
 
@@ -24,6 +25,7 @@ pub fn thread_join_after_main<F>(main_func: F, s: &str)
     );
 
     main_func(&s);
+    println!();
 
     handle.join().unwrap();
 }

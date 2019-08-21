@@ -1,10 +1,11 @@
-mod basic_syntax;
-mod functional;
-mod trait_interface;
-mod io_example;
-mod container;
-mod generics;
 mod concurrent;
+mod container;
+mod functional;
+mod basic_syntax;
+mod generics;
+mod io_example;
+mod trait_interface;
+mod oop;
 
 
 fn main() {
@@ -13,7 +14,8 @@ fn main() {
 //    container();
 //    generic();
 //    functional();
-    concurrent();
+//    concurrent();
+    oop();
 }
 
 
@@ -75,6 +77,15 @@ fn functional() {
 
 #[allow(dead_code)]
 fn concurrent() {
-//    concurrent::thread_example();
-    concurrent::channel_example();
+    use concurrent::ConcurrentExp;
+
+//    ConcurrentExp::thread_example();
+//    ConcurrentExp::channel_example();
+    ConcurrentExp::mutex_exp()
+
+
+}
+
+fn oop( )  {
+    oop::screen_run();
 }
