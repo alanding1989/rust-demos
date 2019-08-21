@@ -1,9 +1,10 @@
-use crate::oop::trait_object::{Button, SelectBox};
+use trait_object::{Button, SelectBox};
+use trait_object::Screen1;
 
 mod trait_object;
 
+
 pub fn screen_run() {
-    use trait_object::Screen1;
     let screen = Screen1 {
         components: vec![
             Box::new(SelectBox {
