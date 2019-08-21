@@ -6,6 +6,7 @@ mod generics;
 mod io_example;
 mod trait_interface;
 mod oop;
+mod hybrid_programming;
 
 
 fn main() {
@@ -15,7 +16,8 @@ fn main() {
 //    generic();
 //    functional();
 //    concurrent();
-    oop();
+//    oop();
+      hybrid_programming();
 }
 
 
@@ -82,10 +84,16 @@ fn concurrent() {
 //    ConcurrentExp::thread_example();
 //    ConcurrentExp::channel_example();
     ConcurrentExp::mutex_exp()
-
-
 }
 
-fn oop( )  {
+
+#[allow(dead_code)]
+fn oop() {
     oop::screen_run();
+}
+
+
+#[allow(dead_code)]
+fn hybrid_programming(){
+    hybrid_programming::c_fun();
 }

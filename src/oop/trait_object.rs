@@ -4,7 +4,7 @@ pub trait Draw {
 
 
 //<editor-fold desc="@ Screen">
-// T just can stand for those 'same' type implemented Draw
+// generic T just can stand for those 'same' type implemented Draw
 pub struct Screen<T: Draw> {
     pub components: Vec<T>,
 }
@@ -33,6 +33,7 @@ impl Screen1 {
 
 //<editor-fold desc="@ Components">
 pub struct Button {
+    // doesn`t implement new() method, so fields need to be public.
     pub width: u32,
     pub height: u32,
     pub label: String,
