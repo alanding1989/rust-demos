@@ -1,9 +1,18 @@
-[package]
-name = "hellorust"
-version = "0.1.0"
-authors = ["alanding <395577197@qq.com>"]
-edition = "2018"
+[workspace]
+members = [
+    "rust_learn",
+    "hello_macro_derive",
+     ]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
+[profile.release]
+incremental = true
+debug = 1               # only line info
+opt-level = 3           # code optimization
+
+
+[profile.dev]
+opt-level = 0
+
+
+[patch.'crates-io']

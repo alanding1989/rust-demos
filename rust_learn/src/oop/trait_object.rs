@@ -26,7 +26,10 @@ pub struct Screen1 {
 impl Screen1 {
     pub fn run(&self) {
         for component in self.components.iter() {
-            component.draw();
+            // pay attention to the type of component, *component, **component,
+            // Rust auto dereference for us.
+            // (**component).draw()
+            component.draw()
         }
     }
 }

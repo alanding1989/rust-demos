@@ -1,12 +1,13 @@
+mod basic_syntax;
 mod concurrent;
 mod container;
 mod functional;
-mod basic_syntax;
 mod generics;
-mod io_example;
-mod trait_interface;
-mod oop;
 mod hybrid_programming;
+mod io_example;
+mod oop;
+mod macro_learn;
+
 
 
 fn main() {
@@ -17,39 +18,31 @@ fn main() {
 //    functional();
 //    concurrent();
 //    oop();
-      hybrid_programming();
+//    hybrid_programming();
+    macro_learn();
 }
 
 
 #[allow(dead_code)]
 fn trait_interf() {
-    use crate::trait_interface::Circle;
-    // struct
-    let cir = Circle::new(1.0, 2.0, 5.0);
-    // the following initialization method only can used for tuple struct,
-    // tuple struct doesn`t has named field(attribute)
-//    let cir1 = Circle(1.0, 2.0, 2.0);
-    trait_interface::print_area(cir);
-    println!();
-    trait_interface::use_foobar();
-    println!();
-    trait_interface::use_childfoo();
+    oop::trait_interface();
+    oop::screen_run();
 }
 
 
 #[allow(dead_code)]
 fn io_example() {
-//    file_in();
+    //    file_in();
     io_example::file_out();
-//    stdio_in();
-//    stdio_out();
+    //    stdio_in();
+    //    stdio_out();
 }
 
 
 #[allow(dead_code)]
 fn basic_types() {
-//    simple();
-//    slice();
+    //    simple();
+    //    slice();
     let word = basic_syntax::first_word("hellorust");
     println!("word is: {}", word)
 }
@@ -71,7 +64,7 @@ fn generic() {
 
 #[allow(dead_code)]
 fn functional() {
-    functional::entry();
+//    functional::entry();
 
     functional::closure();
 }
@@ -81,19 +74,27 @@ fn functional() {
 fn concurrent() {
     use concurrent::ConcurrentExp;
 
-//    ConcurrentExp::thread_example();
-//    ConcurrentExp::channel_example();
+    //    ConcurrentExp::thread_example();
+    //    ConcurrentExp::channel_example();
     ConcurrentExp::mutex_exp()
 }
 
 
 #[allow(dead_code)]
 fn oop() {
-    oop::screen_run();
+//    oop::screen_run();
+
+    oop::trait_interface();
 }
 
 
 #[allow(dead_code)]
-fn hybrid_programming(){
+fn hybrid_programming() {
     hybrid_programming::calling_c();
+}
+
+
+#[allow(dead_code)]
+fn macro_learn() {
+    macro_learn::customize_macro();
 }
