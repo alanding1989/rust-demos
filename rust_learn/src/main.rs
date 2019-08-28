@@ -11,14 +11,14 @@ mod macro_learn;
 
 
 fn main() {
-//    io_example();
-//    basic_types();
-//    container();
-//    generic();
-//    functional();
-//    concurrent();
-//    oop();
-//    hybrid_programming();
+    // io_example();
+    // basic_types();
+    // container();
+    // generic();
+    // functional();
+    // concurrent();
+    // oop();
+    // hybrid_programming();
     macro_learn();
 }
 
