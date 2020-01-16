@@ -1,12 +1,12 @@
+mod trait_interface;
+mod trait_object;
+
 use trait_interface::{Circle, Square};
-use trait_object::{Button, SelectBox};
 use trait_object::Screen1;
+use trait_object::{Button, SelectBox};
 
 use crate::oop::trait_interface::HasArea;
-
-mod trait_object;
-mod trait_interface;
-
+use std::collections::LinkedList;
 
 pub fn screen_run() {
     let screen = Screen1 {
@@ -14,18 +14,14 @@ pub fn screen_run() {
             Box::new(SelectBox {
                 width: 75,
                 height: 10,
-                options: vec![
-                    "Yes".to_string(),
-                    "Maybe".to_string(),
-                    "No".to_string(),
-                ],
+                options: vec!["Yes".to_string(), "Maybe".to_string(), "No".to_string()],
             }),
             Box::new(Button {
                 width: 50,
                 height: 10,
                 label: "ok".to_string(),
-            })
-        ]
+            }),
+        ],
     };
 
     screen.run();
@@ -42,15 +38,15 @@ pub fn trait_interface() {
         trait_interface::print_area(x);
     }
 
-//    trait_interface::print_area(Circle::new(1.0, 2.0, 5.0));
-//    trait_interface::print_area(Square::new(2.0, 3.0, 10.0));
+    //    trait_interface::print_area(Circle::new(1.0, 2.0, 5.0));
+    //    trait_interface::print_area(Square::new(2.0, 3.0, 10.0));
 
     // the following initialization method only can used for tuple struct,
     // tuple struct. which doesn`t has named field(attribute).
     // # Example:  let cir1 = Circle(1.0, 2.0, 2.0);
 
-//    println!();
-//    trait_interface::use_foobar();
-//    println!();
-//    trait_interface::use_childfoo();
+    //    println!();
+    //    trait_interface::use_foobar();
+    //    println!();
+    //    trait_interface::use_childfoo();
 }

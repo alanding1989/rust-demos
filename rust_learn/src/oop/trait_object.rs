@@ -2,7 +2,6 @@ pub trait Draw {
     fn draw(&self);
 }
 
-
 //<editor-fold desc="@ Screen">
 // generic T just can stand for those 'same' type implemented Draw
 pub struct Screen<T: Draw> {
@@ -35,7 +34,6 @@ impl Screen1 {
 }
 //</editor-fold>
 
-
 //<editor-fold desc="@ Components">
 pub struct Button {
     // doesn`t implement new() method, so fields need to be public.
@@ -57,7 +55,7 @@ pub struct SelectBox {
 }
 
 impl Draw for SelectBox {
-    fn draw(&self )  {
+    fn draw(&self) {
         println!("This is SelectBox! ");
     }
 }

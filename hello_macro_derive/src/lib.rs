@@ -1,15 +1,12 @@
-extern crate proc_macro;
+use proc_macro::TokenStream;
 
-use syn;
+use syn::{parse, DeriveInput};
 
 use quote::quote;
 
-use crate::proc_macro::TokenStream;
-
 #[proc_macro_derive(HelloMacro)]
-pub fn hello_macro_derive(input: TokenStream) -> TokenStream {
-    // 构建 Rust 代码所代表的语法树
-    // 以便可以进行操作
+pub fn macro_derive(input: TokenStream) -> TokenStream {
+    // 构建Rust代码的抽象语法树，以便对其进行操作
     let ast = syn::parse(input).unwrap();
 
     // 构建 trait 实现
@@ -26,4 +23,21 @@ fn impl_hello_macro(ast: &syn::DeriveInput) -> TokenStream {
         }
     };
     gen.into()
+}
+
+#[proc_macro_derive(Macro)]
+pub fn derive(input: TokenStream) -> TokenStream {
+    // 构建Rust代码的抽象语法树，以便对其进行操作
+    let ast: DeriveInput = syn::parse(input).unwrap();
+
+    // 为结构体实现方法
+    let name = &ast.ident;
+    let new_ts = quote! {
+        impl #name {
+            fn proc_macro() {
+                println!("Hello, Macro! My name is {}", stringify!(#name));
+            }
+        }
+    };
+    new_ts.into()
 }

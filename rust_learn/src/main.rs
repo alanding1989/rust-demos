@@ -5,10 +5,8 @@ mod functional;
 mod generics;
 mod hybrid_programming;
 mod io_example;
-mod oop;
 mod macro_learn;
-
-
+mod oop;
 
 fn main() {
     // io_example();
@@ -19,16 +17,25 @@ fn main() {
     // concurrent();
     // oop();
     // hybrid_programming();
-    macro_learn();
+    // macro_learn();
+    test_ptr();
 }
 
-
 #[allow(dead_code)]
+fn test_ptr() {
+    let x = vec![0, 1, 2, 3];
+    let ptr = x.as_ptr();
+
+    unsafe {
+        println!("{}", ptr.read());
+        //        assert_eq!(ptr.read(), [0,1,2,3]);
+    }
+}
+
 fn trait_interf() {
     oop::trait_interface();
     oop::screen_run();
 }
-
 
 #[allow(dead_code)]
 fn io_example() {
@@ -38,7 +45,6 @@ fn io_example() {
     //    stdio_out();
 }
 
-
 #[allow(dead_code)]
 fn basic_types() {
     //    simple();
@@ -47,12 +53,10 @@ fn basic_types() {
     println!("word is: {}", word)
 }
 
-
 #[allow(dead_code)]
 fn container() {
     container::vector()
 }
-
 
 #[allow(dead_code)]
 fn generic() {
@@ -61,14 +65,12 @@ fn generic() {
     println!("the largest in the vector is {}", largest);
 }
 
-
 #[allow(dead_code)]
 fn functional() {
-//    functional::entry();
+    //    functional::entry();
 
     functional::closure();
 }
-
 
 #[allow(dead_code)]
 fn concurrent() {
@@ -79,20 +81,17 @@ fn concurrent() {
     ConcurrentExp::mutex_exp()
 }
 
-
 #[allow(dead_code)]
 fn oop() {
-//    oop::screen_run();
+    //    oop::screen_run();
 
     oop::trait_interface();
 }
-
 
 #[allow(dead_code)]
 fn hybrid_programming() {
     hybrid_programming::calling_c();
 }
-
 
 #[allow(dead_code)]
 fn macro_learn() {
